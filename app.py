@@ -51,7 +51,7 @@ def update_author_by_id(id):
 
 
 @app.route("/authors/<id>", methods=["DELETE"])
-def delete_author_by_id(id):
+def delete_author_by_id(id):https://github.com/jabahum-coder/flask-api-mysql-sqlite.git
     Authors.objects(id=ObjectId(id)).delete()
     return make_response(jsonify({"message": "Deleted successfully", "code": 204}))
 
